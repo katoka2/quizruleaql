@@ -92,7 +92,7 @@ function App() {
   return (
     <body>
       <header>
-        <h1>クイズアプリ</h1>
+        <h1>10by10by10 mini</h1>
         <button onClick={handleUndo} disabled={history.length < 2}>↩</button>
       </header>
       <div className="teams-container team-A">
