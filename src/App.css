@@ -1,0 +1,80 @@
+body {
+  text-align: center;  
+}
+
+header {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+.teams-container{
+  display: flex;
+  align-items: flex-start;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.players-container {
+  display: flex;
+  text-align: center;
+  gap: 0.5rem;
+}
+
+.player {
+  border: 2px solid #000;
+  padding: 0.5rem;
+  width: 5rem;
+  text-align: center;
+  border-radius: 8px;
+}
+.player.team-A{background-color: #ffe5dd;}
+.player.team-B{background-color: #dde5ff;}
+
+.player-points{
+  font-size: 1.5rem;
+}
+
+/* 普段は場所だけ確保して透明になる */
+.reach-indicator {  
+  visibility: hidden;
+  font-weight: bold;
+}
+/* visibleクラスが付いた時だけ見えるようになる */
+.reach-indicator.visible { visibility: visible; }
+
+.team-A .reach-indicator{color: red;}
+.team-B .reach-indicator{color: blue;}
+
+/* 合計得点ボックス */
+.team-score {
+  margin-left: 0.5rem;
+  height: 110px;
+  width: 4rem;
+  color: #000;
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 105px;
+  text-align: center;
+  border-radius: 20px;
+}
+.team-A .team-score{border: 10px solid  red;}
+.team-B .team-score{border: 10px solid  blue;}
+
+/* ボタン配置 */
+.player-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+button {
+  width: 40px;
+  height: 30px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
